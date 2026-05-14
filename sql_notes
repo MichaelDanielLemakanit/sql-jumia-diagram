@@ -1,0 +1,61 @@
+<!-- 1. Introduction to Databases
+A Relational Database organizes data into Tables.
+
+Columns (Fields): Define the type of data (e.g., Name, Age).
+
+Rows (Records): Individual entries (e.g., Daniel, 30). -->
+
+
+<!-- 2. The SELECT Statement
+The SELECT statement is used to fetch data from a database. It is the most common command you will use.
+
+Syntax: -->
+
+<!-- SELECT column1, column2 FROM table_name; -->
+
+<!-- SELECT * FROM employees; -->
+
+<!-- 3. Distinct & Aliases
+DISTINCT: Removes duplicate values from your results. -->
+
+<!-- SELECT DISTINCT country FROM customers; -->
+
+<!-- AS (Alias): Gives a column or table a temporary, more readable name. -->
+
+<!-- SELECT first_name AS "Name" FROM users; -->
+
+<!-- 4. The WHERE Clause
+The WHERE clause is used to filter records. It ensures you only retrieve data that meets a specific condition. -->
+
+<!-- SELECT * FROM products WHERE price = 50; -->
+
+
+
+
+<!-- Operator,Description,Example
+=,Equal to,WHERE city = 'Nairobi'
+> or <,Greater/Less than,WHERE age > 18
+>= or <=,Greater/Less than or equal,WHERE score >= 50
+<> or !=,Not equal,WHERE status != 'closed'
+BETWEEN,Within a range,WHERE price BETWEEN 10 AND 20
+LIKE,Search for a pattern,WHERE name LIKE 'J%' (starts with J)
+IN,Specify multiple values,"WHERE color IN ('Red', 'Blue')" -->
+
+
+<!-- 5. Combining Conditions (AND, OR, NOT)
+You can sharpen your filters by combining multiple requirements:
+
+AND: Both conditions must be true. -->
+
+<!-- SELECT * FROM staff WHERE dept = 'Sales' AND salary > 5000;
+    ```
+*   **OR:** At least one condition must be true.
+    
+```sql
+    SELECT * FROM orders WHERE status = 'Pending' OR total < 100;
+    ```
+*   **NOT:** Shows records where the condition is NOT true.
+    
+```sql
+    SELECT * FROM clients WHERE NOT country = 'USA';
+    ``` -->
